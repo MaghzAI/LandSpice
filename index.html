@@ -314,5 +314,29 @@
   <!-- Back to Top -->
   <a href="#top" id="backToTop" class="back-to-top" aria-label="العودة للأعلى">↑</a>
   <script src="assets/js/main.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAup5K7Nz87e5Iukut1PudHn2wV1bc5690",
+      authDomain: "landspice-d9db5.firebaseapp.com",
+      projectId: "landspice-d9db5",
+      storageBucket: "landspice-d9db5.firebasestorage.app",
+      messagingSenderId: "1026404822173",
+      appId: "1:1026404822173:web:62f639fc418afb1905f874",
+      measurementId: "G-K9J2THRERY"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
