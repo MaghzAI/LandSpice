@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <title>لاند سبايس | LandSpices – الجودة اليمنية بطعم عالمي</title>
+  <meta name="description" content="LandSpices لاند سبايس: شركة يمنية لمنتجات غذائية عالية الجودة: شطة حارة، كاتشب، مسحوق الطماطم المجففة، مسحوق البسباس المبهر. مكونات يمنية خالصة، جودة تستحق الاختيار." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fffaf8" />
+
+  <link rel="canonical" href="https://landspices.example/" />
+
+  <meta property="og:locale" content="ar_YE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LandSpices | لاند سبايس" />
+  <meta property="og:title" content="لاند سبايس – الجودة اليمنية بطعم عالمي" />
+  <meta property="og:description" content="شركة يمنية قوية بمنتجات غذائية ذات جودة عالية وأصالة يمنية." />
+  <meta property="og:image" content="assets/img/logo.svg" />
+  <meta property="og:image:alt" content="شعار لاند سبايس LandSpices" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="لاند سبايس – الجودة اليمنية بطعم عالمي" />
+  <meta name="twitter:description" content="شطة، كاتشب، مسحوق طماطم، مسحوق بسباس – مكونات يمنية خالصة." />
+  <meta name="twitter:image" content="assets/img/logo.svg" />
+
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var root = document.documentElement;
+        var savedLang = localStorage.getItem('landspices_lang');
+        var lang = savedLang === 'en' ? 'en' : (root.getAttribute('lang') === 'en' ? 'en' : 'ar');
+        root.setAttribute('lang', lang);
+        root.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+        var savedTheme = localStorage.getItem('landspices_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+        root.setAttribute('data-theme', theme);
+        // Set initial theme-color meta to match background to avoid address bar flicker
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (!meta) {
+          meta = document.createElement('meta');
+          meta.setAttribute('name', 'theme-color');
+          document.head.appendChild(meta);
+        }
+        meta.setAttribute('content', theme === 'dark' ? '#0f0f12' : '#fffaf8');
+      } catch (e) { /* noop */ }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skip.to_content">تخطٍ إلى المحتوى</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <header class="header" id="top" role="banner">
+    <div class="container">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo.svg" alt="LandSpices Logo" width="42" height="42" />
+        <span class="brand__text">
+          <strong>لاند سبايس</strong>
+          <small>LandSpices</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <button class="nav__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="قائمة">
+          <span class="burger"></span>
+        </button>
+        <ul class="nav__menu" id="navMenu" aria-hidden="true">
+          <li><a href="#products" data-i18n="nav.products">المنتجات</a></li>
+          <li><a href="#quality" data-i18n="nav.quality">الجودة</a></li>
+          <li><a href="#partners" data-i18n="nav.partners">الشركاء</a></li>
+          <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
+          <li><a class="btn btn--primary btn--shine" href="#contact" data-i18n="nav.cta_contact">اطلب الآن</a></li>
+        </ul>
+        <div class="nav__controls">
+          <button id="langToggle" class="ctrl-btn" type="button" aria-label="تغيير اللغة">AR</button>
+          <button id="themeToggle" class="ctrl-btn" type="button" aria-label="تبديل الثيم">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">صُنع في اليمن • جودة عالمية</p>
+          <h1 data-i18n="hero.title">الجودة اليمنية بطعم عالمي</h1>
+          <p class="lead" data-i18n="hero.lead">نصنع منتجات غذائية عالية الجودة من مكونات يمنية خالصة. رسالتنا الجودة، ورؤيتنا: صنع في اليمن عالميًا.</p>
+          <div class="ctas">
+            <a href="https://wa.me/967776209864?text=مرحباً%20أرغب%20في%20طلب%20منتجات%20لاند%20سبايس" class="btn btn--primary btn--shine" data-i18n="hero.cta_whatsapp">تواصل واتساب</a>
+            <a href="#products" class="btn btn--ghost" data-i18n="hero.cta_explore">استكشف المنتجات</a>
+          </div>
+          <ul class="trust-badges">
+            <li data-i18n="hero.badge1">مكونات يمنية خالصة</li>
+            <li data-i18n="hero.badge2">جودة تستحق الاختيار</li>
+            <li data-i18n="hero.badge3">نَكهات أصلية</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__decor" aria-hidden="true">
+        <span class="d1" title="شطة">🌶️</span>
+        <span class="d2" title="طماطم">🍅</span>
+        <span class="d3" title="ثوم">🧄</span>
+      </div>
+      <a href="#products" id="scrollDown" class="scroll-down" aria-label="تصفح للأسفل">⌄</a>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="container">
+        <header class="section__header reveal" style="--d:.02s">
+          <h2 data-i18n="section.products.title">منتجاتنا</h2>
+          <p data-i18n="section.products.sub">من الأرض اليمنية إلى مائدتكم.</p>
+        </header>
+
+        <div class="grid">
+          <article class="card tilt reveal" style="--d:.05s">
+            <div class="card__tag">الأكثر طلبًا</div>
+            <div class="card__media" aria-hidden="true">
+              <div class="pack"><span class="icon">🌶️</span></div>
+            </div>
+            <h3 data-i18n="product1.title">شطة لاند سبايس الحارة</h3>
+            <p data-i18n="product1.desc">شطة يمنية بمذاق حار متوازن ونكهة أصيلة.</p>
+            <ul class="sizes">
+              <li>200 مل</li>
+              <li>28 مل</li>
+              <li>أكياس سفري 10 مل</li>
+              <li>4,500 مل (مطاعم)</li>
+            </ul>
+            <div class="card__cta">
+              <a class="btn btn--primary btn--shine btn--order" href="#contact" data-i18n="nav.cta_contact">اطلب الآن</a>
+            </div>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.1s">
+            <div class="card__media" aria-hidden="true">
+              <div class="pack"><span class="icon">🍅</span></div>
+            </div>
+            <h3 data-i18n="product2.title">كاتشب لاند سبايس</h3>
+            <p data-i18n="product2.desc">كاتشب بطعم غني ومكونات يمنية مختارة.</p>
+            <ul class="sizes">
+              <li>أكياس 10 مل</li>
+              <li>4,500 مل (مطاعم)</li>
+            </ul>
+            <div class="card__cta">
+              <a class="btn btn--primary btn--shine btn--order" href="#contact" data-i18n="nav.cta_contact">اطلب الآن</a>
+            </div>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.15s">
+            <div class="card__tag">طبيعي 100%</div>
+            <div class="card__media" aria-hidden="true">
+              <div class="pack"><span class="icon">🍅</span></div>
+            </div>
+            <h3 data-i18n="product3.title">مسحوق الطماطم المجففة</h3>
+            <p data-i18n="product3.desc">صلصة طبيعية 100% بدون مواد حافظة.</p>
+            <ul class="sizes">
+              <li>100 جم</li>
+              <li>250 جم</li>
+              <li>500 جم</li>
+            </ul>
+            <div class="card__cta">
+              <a class="btn btn--primary btn--shine btn--order" href="#contact" data-i18n="nav.cta_contact">اطلب الآن</a>
+            </div>
+          </article>
+
+          <article class="card tilt reveal" style="--d:.2s">
+            <div class="card__media" aria-hidden="true">
+              <div class="pack"><span class="icon">🧄</span></div>
+            </div>
+            <h3 data-i18n="product4.title">مسحوق البسباس المبهر</h3>
+            <p data-i18n="product4.desc">فلفل مطحون مع الثوم والبهارات؛ لذيذ وسهل التقديم.</p>
+            <ul class="sizes">
+              <li>عبوات متعددة</li>
+            </ul>
+            <div class="card__cta">
+              <a class="btn btn--primary btn--shine btn--order" href="#contact" data-i18n="nav.cta_contact">اطلب الآن</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quality" id="quality">
+      <div class="container">
+        <header class="section__header reveal" style="--d:.02s">
+          <h2 data-i18n="section.quality.title">لماذا لاند سبايس؟</h2>
+          <p data-i18n="section.quality.sub">نهتم بأدق التفاصيل لتقديم طعم أصيل وثابت.</p>
+        </header>
+        <div class="features">
+          <div class="feature reveal" style="--d:.05s">
+            <span class="icon">🌶️</span>
+            <h3 data-i18n="quality1.title">أصالة يمنية</h3>
+            <p data-i18n="quality1.desc">مكونات من الأرض اليمنية العريقة.</p>
+          </div>
+          <div class="feature reveal" style="--d:.1s">
+            <span class="icon">✅</span>
+            <h3 data-i18n="quality2.title">معايير جودة</h3>
+            <p data-i18n="quality2.desc">عمليات إنتاج دقيقة لضمان الجودة.</p>
+          </div>
+          <div class="feature reveal" style="--d:.15s">
+            <span class="icon">🛡️</span>
+            <h3 data-i18n="quality3.title">ثقة وتميز</h3>
+            <p data-i18n="quality3.desc">نكهات مميزة تنافس المنتجات العالمية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners" id="partners">
+      <div class="container">
+        <header class="section__header reveal" style="--d:.02s">
+          <h2 data-i18n="section.partners.title">شركاؤنا</h2>
+          <p data-i18n="section.partners.sub">نفخر بثقة شركائنا وعملائنا.</p>
+        </header>
+        <div class="partners__logos">
+          <div class="partner">ISO 22000<small>اعتماد جودة</small></div>
+          <div class="partner">HACCP<small>سلامة الغذاء</small></div>
+          <div class="partner">Retail<small>متاجر مختارة</small></div>
+          <div class="partner">Hotels<small>الضيافة</small></div>
+          <div class="partner">Catering<small>توريد</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__content reveal" style="--d:.05s">
+          <h2 data-i18n="section.about.title">من نحن</h2>
+          <p data-i18n="section.about.text">لاند سبايس شركة يمنية ناشئة وقوية متخصصة في المنتجات الغذائية عالية الجودة. رسالتنا <strong>الجودة</strong>، ورؤيتنا <strong>صنع في اليمن عالميًا</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <header class="section__header reveal" style="--d:.02s">
+          <h2 data-i18n="section.faq.title">الأسئلة الشائعة</h2>
+          <p data-i18n="section.faq.sub">إجابات سريعة على أكثر الأسئلة تكرارًا.</p>
+        </header>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq1"><span class="q" data-i18n="faq1.q">ما هي مكونات منتجاتكم؟</span> <span class="chev">⌄</span></button>
+            <div class="faq__a" id="faq1" role="region" aria-label="الإجابة" aria-hidden="true" data-i18n="faq1.a">نستخدم مكونات يمنية طبيعية مختارة بعناية لضمان جودة وطعم أصيل.</div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq2"><span class="q" data-i18n="faq2.q">هل توفرون كميات جملة للمطاعم؟</span> <span class="chev">⌄</span></button>
+            <div class="faq__a" id="faq2" role="region" aria-label="الإجابة" aria-hidden="true" data-i18n="faq2.a">نعم، تتوفر عبوات كبيرة للمطاعم وشركاء الضيافة والتوريد.</div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq3"><span class="q" data-i18n="faq3.q">أين تتوفر منتجاتكم؟</span> <span class="chev">⌄</span></button>
+            <div class="faq__a" id="faq3" role="region" aria-label="الإجابة" aria-hidden="true" data-i18n="faq3.a">يمكن طلبها مباشرة عبر واتساب أو البريد، وبالتعاون مع متاجر وموزعين مختارين.</div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq4"><span class="q" data-i18n="faq4.q">هل تقدمون شحنًا خارج اليمن؟</span> <span class="chev">⌄</span></button>
+            <div class="faq__a" id="faq4" role="region" aria-label="الإجابة" aria-hidden="true" data-i18n="faq4.a">نتعاون مع شركاء لوجستيين لتوفير الشحن حسب الكميات والوجهة. تواصلوا معنا للتفاصيل.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section__header reveal" style="--d:.02s">
+          <h2 data-i18n="section.contact.title">تواصل معنا</h2>
+          <p data-i18n="section.contact.sub">لطلب الجملة والتوزيع أو للاستفسارات.</p>
+        </header>
+        <div class="contact__grid">
+          <div class="contact__card reveal" style="--d:.05s">
+            <h3 data-i18n="contact.quick">اتصال سريع</h3>
+            <p data-i18n="contact.whatsapp_label">واتساب المبيعات</p>
+            <p dir="ltr"><strong>+967776209864</strong></p>
+            <button class="copy-btn" type="button" data-copy="+967776209864" aria-label="نسخ رقم الواتساب" data-i18n="contact.copy">نسخ</button>
+            <a class="btn btn--primary btn--shine" target="_blank" rel="noopener" href="https://wa.me/967776209864?text=مرحباً%20أرغب%20في%20طلب%20منتجات%20لاند%20سبايس" data-i18n="contact.message_us">راسلنا</a>
+          </div>
+          <div class="contact__card reveal" style="--d:.1s">
+            <h3 data-i18n="contact.email.title">البريد الإلكتروني</h3>
+            <p>sales@landspices.com</p>
+            <button class="copy-btn" type="button" data-copy="landspices2025@gmail.com" aria-label="نسخ البريد الإلكتروني" data-i18n="contact.copy">نسخ</button>
+            <a class="btn btn--ghost" href="mailto:landspices2025@gmail.com?subject=طلب%20منتجات%20لاند%20سبايس&body=مرحباً%20فريق%20لاند%20سبايس" data-i18n="contact.email.send">أرسل رسالة</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="float-whatsapp" href="https://wa.me/967776209864?text=مرحباً%20أرغب%20في%20طلب%20منتجات%20لاند%20سبايس" target="_blank" rel="noopener" aria-label="واتساب">
+    ☎️
+  </a>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p data-i18n="footer.copy">© <span id="year"></span> لاند سبايس LandSpices. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LandSpices",
+    "alternateName": "لاند سبايس",
+    "url": "https://landspices.wep.app/",
+    "logo": "assets/img/logo.svg",
+    "sameAs": []
+  }
+  </script>
+  <!-- Back to Top -->
+  <a href="#top" id="backToTop" class="back-to-top" aria-label="العودة للأعلى">↑</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
